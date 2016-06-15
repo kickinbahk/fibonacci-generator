@@ -5,7 +5,7 @@ FibonacciGenerator.prototype.compute = function (startingNum, sequenceLength) {
   var newSequence = []
   for (var x = 0; x < sequenceLength; x++) {
     sequence.forEach(function (element) {
-      var sum = element + sequence[element - 1]
+      var sum = element + sequence[x]
       newSequence.push(sum)
     })
   }
