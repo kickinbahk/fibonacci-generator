@@ -27,4 +27,7 @@ describe('Fibonacci Genenerator', function () {
   it('if given 4, will return sequence up to 4 numbers', function () {
     expect(fibonacciGen.compute(4)).toEqual([0, 1, 1, 2, 3, 5])
   })
+  it('if given 11, will return a sequence up to 11 numbers', function () {
+    expect(fibonacciGen.compute(11)).toEqual([0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144])
+  })
 })
