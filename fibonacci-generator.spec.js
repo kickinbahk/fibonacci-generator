@@ -28,9 +28,8 @@ describe('Fibonacci Genenerator', function () {
   })
 
   // tests for 3 places
-  xit('if given 1 and 3, will return fibonacci sequence up to 3 places',
+  it('if given 1 and 3, will return fibonacci sequence up to 3 places',
   function () {
-    var fibonacciGen = new FibonacciGenerator()
     expect(fibonacciGen.compute(1, 3)).toEqual([0, 1, 1, 2, 3])
   })
 })
