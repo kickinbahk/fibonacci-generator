@@ -1,15 +1,14 @@
 var FibonacciGenerator = function () {}
 
-FibonacciGenerator.prototype.compute = function (startingNum, sequenceLength) {
-  var sequence = [0, startingNum]
-  var newSequence = []
-  for (var x = 0; x < sequenceLength; x++) {
+FibonacciGenerator.prototype.compute = function (endingNum) {
+  var sequence = [0, 1]
+  for (var x = 1; x < endingNum; x++) {
     sequence.forEach(function (element) {
       var sum = element + sequence[x]
-      newSequence.push(sum)
+      sequence.push(sum)
     })
   }
-  return newSequence
+  return sequence
 }
 
 module.exports = FibonacciGenerator
